@@ -10,7 +10,7 @@ const AppContainer = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   padding: 16px;
   gap: 8px;
-  background-color: grey;
+  background-color: white;
   textarea:focus,
   input:focus {
     box-shadow: 0 0 0 0;
@@ -93,10 +93,6 @@ class App extends React.Component {
     sortingParameter: "title",
     order: 1,
   };
-  // somarValorTotal=(total, item)=>{
-  //     let totalAPagar= total + (item.produto.price * item.quantidade);
-  //    this.setState({carrinho:[...this.state.carrinho,{valorTotal:totalAPagar}]})
-  // }
   adicionarProduto = (event) => {
     event.preventDefault();
     let produtoSelecionado = products.filter((products) => {
